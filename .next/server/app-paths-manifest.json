@@ -1,5 +1,8 @@
 {
-  "/(default)/page": "app/(default)/page.js",
-  "/(auth)/signup/page": "app/(auth)/signup/page.js",
-  "/(auth)/signin/page": "app/(auth)/signin/page.js"
+  "/not-found": "app/not-found.js",
+  "/(home)/page": "app/(home)/page.js",
+  "/(menu)/projects/page": "app/(menu)/projects/page.js",
+  "/(menu)/contact/page": "app/(menu)/contact/page.js",
+  "/(menu)/blog/page": "app/(menu)/blog/page.js",
+  "/(menu)/projects/1/page": "app/(menu)/projects/1/page.js"
 }
