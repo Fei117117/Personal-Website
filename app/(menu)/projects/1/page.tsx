@@ -218,18 +218,6 @@ export default function NYSeeNow() {
               This layer acts as the bridge be- tween our application and the
               database. The Persistence Layer leverages JPA (Java Persistence
               API) to manage data storage and retrieval.
-            </p>
-            <h3 className="text-2xl text-gray-700 font-medium">Back End</h3>
-            <p className="mt-2 text-gray-600 text-lg">
-              Developed using Java Spring Boot, it is the core of our
-              application, managing logic and data. It splits into: <br />
-              <strong>Business Layer:</strong> This is where our core
-              application logic resides. It ensures that user requests are
-              processed accurately and efficiently. <br />
-              <strong>Persistence Layer:</strong>
-              This layer acts as the bridge be- tween our application and the
-              database. The Persistence Layer leverages JPA (Java Persistence
-              API) to manage data storage and retrieval.
               <br />
               Amazon RDS is our chosen platform for data storage. It offers
               reliability, scalability, and seamless integration with our back
