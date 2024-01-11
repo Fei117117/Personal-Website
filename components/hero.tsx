@@ -55,7 +55,7 @@ export default function Hero() {
                 data-aos="zoom-y-out"
                 data-aos-delay="150"
               >
-                I'M A WEB DEVELOPER & PROGRAMMER LIVING IN DUBLIN, IRELAND.
+                I'M A SOFTWARE DEVELOPER & PROGRAMMER LIVING IN DUBLIN, IRELAND.
               </p>
               <div
                 className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center"
@@ -65,7 +65,7 @@ export default function Hero() {
                 <div>
                   <a
                     className="btn text-white bg-blue-600 hover:bg-blue-700 w-full mb-4 sm:w-auto sm:mb-0"
-                    href="mailto:fei.gao1@ucdconnect.ie"
+                    href="mailto:fei.gao1515@gmail.com"
                   >
                     Send me an Email
                   </a>
@@ -83,7 +83,7 @@ export default function Hero() {
           </div>
 
           {/* Hero image */}
-          <ModalVideo
+          {/* <ModalVideo
             thumb={VideoThumb}
             thumbWidth={768}
             thumbHeight={432}
@@ -91,7 +91,7 @@ export default function Hero() {
             video="/videos/video.mp4"
             videoWidth={1920}
             videoHeight={1080}
-          />
+          /> */}
         </div>
       </div>
     </section>

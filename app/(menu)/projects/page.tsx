@@ -7,16 +7,31 @@ export const metadata = {
 };
 
 export default function Projects() {
-  // Dummy data for projects, replace with your actual project data
   const projects = [
     {
       id: "1",
-      title: "Project One",
-      description: "Description of Project One...",
-      imageUrl: "/images/1.png", // Update the path as necessary
-      pagePath: "/projects/1/page", // Assuming you have a page.tsx in the folder project-1
+      title: "NYSeeNow",
+      description:
+        "An innovative web and mobile application designed to transform the tourist experience in Manhattan, New York.",
+      imageUrl: "/images/NYSEENOW.png",
+      pagePath: "/projects/1/page",
     },
-    // ... other projects
+    {
+      id: "2",
+      title: "RideMate",
+      description:
+        "A web application designed to enhance the experience of using Dublin Bikes. It provides real-time and predictive information on bike availability and weather conditions.",
+      imageUrl: "/images/RIDEMATE.png",
+      pagePath: "/projects/2/page",
+    },
+    {
+      id: "3",
+      title: "Natour",
+      description:
+        "Natours is a visually engaging, interactive website designed for a fictional outdoor tour company.",
+      imageUrl: "/images/NATOUR.png",
+      pagePath: "/projects/3/page",
+    },
   ];
 
   return (
@@ -28,26 +43,33 @@ export default function Projects() {
             className="max-w-3xl mx-auto text-center pb-12 md:pb-20"
             data-aos="zoom-y-out"
           >
-            <h1 className="h1">My Projects</h1>
+            <h1 className="h1 mb-4">My Projects</h1>
             <p className="text-lg text-gray-600">
               A showcase of my latest work in web development
             </p>
           </div>
 
           {/* Projects grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div
+            className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
+            data-aos="zoom-y-out"
+          >
             {projects.map((project) => (
               <Link key={project.id} href={`/projects/${project.id}`} passHref>
-                <div className="bg-white rounded-lg shadow overflow-hidden cursor-pointer">
+                <div className="flex flex-col h-full bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 cursor-pointer">
                   <img
                     src={project.imageUrl}
                     alt={project.title}
-                    className="w-full"
+                    className="w-full h-32 object-contain rounded-t-lg"
                   />
-                  <div className="p-4">
+                  <div className="p-4 flex-grow">
                     <h3 className="text-lg font-semibold">{project.title}</h3>
-                    <p className="text-gray-600">{project.description}</p>
-                    <span className="text-blue-600 hover:underline mt-2 inline-block">
+                    <p className="text-gray-600 text-sm">
+                      {project.description}
+                    </p>
+                  </div>
+                  <div className="px-4 pb-4 mt-auto">
+                    <span className="text-blue-600 hover:text-blue-700 text-sm">
                       View Project
                     </span>
                   </div>

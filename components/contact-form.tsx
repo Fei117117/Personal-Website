@@ -1,4 +1,43 @@
+"use client";
+
+import emailjs from "emailjs-com";
+
 export default function ContactForm() {
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    // Type assertion for the form element
+    const form = e.target as HTMLFormElement;
+
+    // Accessing form elements
+    const email = form.user_email.value;
+    const message = form.message.value;
+
+    if (!email || !message) {
+      alert("Please fill in all the fields.");
+      return;
+    }
+
+    emailjs
+      .sendForm(
+        "service_fk0yh7b",
+        "template_1o6uzbs",
+        form,
+        "ccfYF3IgzdZyoYLCr"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert("Message sent successfully!");
+          form.reset();
+        },
+        (error) => {
+          console.log(error.text);
+          alert("Failed to send message. Please try again later.");
+        }
+      );
+  };
+
   return (
     <section>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -91,36 +130,38 @@ export default function ContactForm() {
 
             <div className="relative flex flex-col lg:flex-row justify-between items-center">
               {/* Contact form content */}
-              <div className="text-center lg:text-left lg:max-w-xl">
+              <div className="text-center lg:text-left lg:max-w-md">
                 <h3 className="h3 text-white mb-2">Get in Touch</h3>
-                <p className="text-gray-300 text-lg mb-6">
+                <p className="text-gray-300 text-sm mb-6">
                   Feel free to send me a message for any inquiries or questions.
                 </p>
 
                 {/* Contact form */}
-                <form className="w-full lg:w-auto">
+                <form className="w-full lg:w-auto" onSubmit={sendEmail}>
                   <div className="flex flex-col space-y-4 sm:space-y-0 sm:flex-row sm:space-x-4 justify-center max-w-xs mx-auto sm:max-w-md lg:mx-0">
                     <input
                       type="email"
-                      className="form-input w-full appearance-none bg-gray-800 border border-gray-700 focus:border-gray-600 rounded-md px-4 py-3 mb-2 sm:mb-0 text-white placeholder-gray-500"
+                      name="user_email"
+                      className="form-input w-full appearance-none bg-gray-800 border border-gray-700 focus:border-gray-600 rounded-md px-3 py-2 mb-2 sm:mb-0 text-white placeholder-gray-500"
                       placeholder="Your email…"
                       aria-label="Your email…"
                     />
                     <textarea
-                      className="form-textarea w-full appearance-none bg-gray-800 border border-gray-700 focus:border-gray-600 rounded-md px-4 py-3 text-white placeholder-gray-500"
+                      name="message"
+                      className="form-textarea w-full appearance-none bg-gray-800 border border-gray-700 focus:border-gray-600 rounded-md px-3 py-2 text-white placeholder-gray-500"
                       placeholder="Your message…"
                       aria-label="Your message…"
-                      rows={4}
+                      rows={2}
                     ></textarea>
                     <button
                       type="submit"
-                      className="btn text-white bg-blue-600 hover:bg-blue-700 shadow rounded-md px-5 py-3"
+                      className="btn text-white bg-blue-600 hover:bg-blue-700 shadow rounded-md px-4 py-2"
                     >
                       Send Message
                     </button>
                   </div>
                   <p className="text-sm text-gray-400 mt-3">
-                    I respect your privacy. No spam ever.
+                    I respect your privacy.
                   </p>
                 </form>
               </div>

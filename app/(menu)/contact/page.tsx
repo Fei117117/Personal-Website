@@ -7,14 +7,11 @@ export const metadata = {
 export default function ContactMe() {
   return (
     <section className="bg-gradient-to-b from-gray-100 to-white">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6" data-aos="zoom-y-out">
         <div className="pt-32 pb-12 md:pt-40 md:pb-20">
           {/* Page header */}
-          <div
-            className="max-w-3xl mx-auto text-center pb-12 md:pb-20"
-            data-aos="zoom-y-out"
-          >
-            <h1 className="h1">Get in Touch</h1>
+          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
+            <h1 className="h1 mb-4">Get in Touch</h1>
             <p className="text-lg text-gray-600">Here's how you can reach me</p>
           </div>
 
@@ -24,9 +21,7 @@ export default function ContactMe() {
             <div className="mb-6">
               <h3 className="text-lg font-semibold text-gray-800">Email</h3>
               <p className="text-gray-600">
-                <a href="mailto:fei.gao1@ucdconnect.ie">
-                  fei.gao1@ucdconnect.ie
-                </a>
+                <a href="mailto:fei.gao1515@gmail.com">fei.gao1515@gmail.com</a>
               </p>
             </div>
             {/* Phone Number */}

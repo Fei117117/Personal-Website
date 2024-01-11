@@ -1,21 +1,10 @@
 {
   "pages": {
-    "/(menu)/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/(menu)/layout.css",
-      "static/chunks/app/(menu)/layout.js"
-    ],
     "/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
-    ],
-    "/(menu)/projects/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(menu)/projects/page.js"
     ],
     "/(home)/page": [
       "static/chunks/webpack.js",
@@ -28,25 +17,21 @@
       "static/css/app/(home)/layout.css",
       "static/chunks/app/(home)/layout.js"
     ],
-    "/(menu)/blog/page": [
+    "/(menu)/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(menu)/blog/page.js"
+      "static/css/app/(menu)/layout.css",
+      "static/chunks/app/(menu)/layout.js"
     ],
-    "/(menu)/contact/page": [
+    "/(menu)/projects/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(menu)/contact/page.js"
+      "static/chunks/app/(menu)/projects/page.js"
     ],
     "/(menu)/projects/1/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/(menu)/projects/1/page.js"
-    ],
-    "/not-found": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/not-found.js"
     ]
   }
 }

@@ -34,7 +34,7 @@ export default function Features() {
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
             <h1 className="h2 mb-4">About Me</h1>
-            <p className="text-xl text-gray-600">
+            <p className="text-xl text-gray-600" data-aos="zoom-y-out">
               A brief introduction to my professional journey and skills
             </p>
           </div>
@@ -46,14 +46,17 @@ export default function Features() {
               className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 md:mt-6"
               data-aos="fade-right"
             >
-              <div className="md:pr-4 lg:pr-12 xl:pr-16 mb-8">
-                <h3 className="h3 mb-3">Powerful suite of tools</h3>
-                <p className="text-xl text-gray-600">
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore pariatur. Excepteur sint occaecat cupidatat non
-                  proident, sunt in culpa.
+              {/* <div className="md:pr-4 lg:pr-12 xl:pr-16 mb-8">
+                <h3 className="h3 mb-3">Introduction and Passion</h3>
+                <p className="text-sm text-gray-600">
+                  Hello! I'm Fei, a full-stack developer with a fervent passion
+                  for building scalable web applications. My journey in the tech
+                  realm started with a curiosity to understand how digital
+                  solutions can positively impact our daily lives, transforming
+                  that curiosity into a dedicated career in software
+                  development.
                 </p>
-              </div>
+              </div> */}
               {/* Tabs buttons */}
               <div className="mb-8 md:mb-0">
                 <a
@@ -70,12 +73,9 @@ export default function Features() {
                 >
                   <div>
                     <div className="font-bold leading-snug tracking-tight mb-1">
-                      Building the Simple ecosystem
+                      Introduction and Passion
                     </div>
-                    <div className="text-gray-600">
-                      Take collaboration to the next level with security and
-                      administrative features built for teams.
-                    </div>
+                    <div className="text-gray-600"></div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
                     <svg
@@ -101,12 +101,9 @@ export default function Features() {
                 >
                   <div>
                     <div className="font-bold leading-snug tracking-tight mb-1">
-                      Building the Simple ecosystem
+                      Skills and Expertise
                     </div>
-                    <div className="text-gray-600">
-                      Take collaboration to the next level with security and
-                      administrative features built for teams.
-                    </div>
+                    <div className="text-gray-600"></div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
                     <svg
@@ -114,10 +111,7 @@ export default function Features() {
                       viewBox="0 0 12 12"
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      <path
-                        d="M11.854.146a.5.5 0 00-.525-.116l-11 4a.5.5 0 00-.015.934l4.8 1.921 1.921 4.8A.5.5 0 007.5 12h.008a.5.5 0 00.462-.329l4-11a.5.5 0 00-.116-.525z"
-                        fillRule="nonzero"
-                      />
+                      <path d="M11.953 4.29a.5.5 0 00-.454-.292H6.14L6.984.62A.5.5 0 006.12.173l-6 7a.5.5 0 00.379.825h5.359l-.844 3.38a.5.5 0 00.864.445l6-7a.5.5 0 00.075-.534z" />
                     </svg>
                   </div>
                 </a>
@@ -135,12 +129,40 @@ export default function Features() {
                 >
                   <div>
                     <div className="font-bold leading-snug tracking-tight mb-1">
-                      Building the Simple ecosystem
+                      Education and Academic Achievements
                     </div>
-                    <div className="text-gray-600">
-                      Take collaboration to the next level with security and
-                      administrative features built for teams.
+                    <div className="text-gray-600"></div>
+                  </div>
+                  <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
+                    <svg
+                      className="w-3 h-3 fill-current"
+                      viewBox="0 0 12 12"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M11.854.146a.5.5 0 00-.525-.116l-11 4a.5.5 0 00-.015.934l4.8 1.921 1.921 4.8A.5.5 0 007.5 12h.008a.5.5 0 00.462-.329l4-11a.5.5 0 00-.116-.525z"
+                        fillRule="nonzero"
+                      />
+                    </svg>
+                  </div>
+                </a>
+                <a
+                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
+                    tab !== 4
+                      ? "bg-white shadow-md border-gray-200 hover:shadow-lg"
+                      : "bg-gray-200 border-transparent"
+                  }`}
+                  href="#0"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setTab(4);
+                  }}
+                >
+                  <div>
+                    <div className="font-bold leading-snug tracking-tight mb-1">
+                      Future Outlook and Continued Growth
                     </div>
+                    <div className="text-gray-600"></div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
                     <svg
@@ -167,7 +189,6 @@ export default function Features() {
                   data-aos="zoom-y-out"
                   ref={tabs}
                 >
-                  {/* Item 1 */}
                   <Transition
                     show={tab === 1}
                     appear={true}
@@ -181,25 +202,25 @@ export default function Features() {
                     beforeEnter={() => heightFix()}
                     unmount={false}
                   >
-                    <div className="relative inline-flex flex-col">
-                      <Image
+                    <div className="relative inline-flex flex-col items-center">
+                      <p className="text-gray-600 text-center mt-4 p-4 bg-white bg-opacity-80 border border-gray-200 rounded shadow-lg">
+                        Hello! I'm Fei, a full-stack developer with a fervent
+                        passion for building scalable web applications. My
+                        journey in the tech realm started with a curiosity to
+                        understand how digital solutions can positively impact
+                        our daily lives, transforming that curiosity into a
+                        dedicated career in software development.
+                      </p>
+                      {/* <Image
                         className="md:max-w-none mx-auto rounded"
                         src={FeaturesBg}
                         width={500}
                         height="462"
                         alt="Features bg"
-                      />
-                      <Image
-                        className="md:max-w-none absolute w-full left-0 transform animate-float"
-                        src={FeaturesElement}
-                        width={500}
-                        height="44"
-                        alt="Element"
-                        style={{ top: "30%" }}
-                      />
+                      /> */}
                     </div>
                   </Transition>
-                  {/* Item 2 */}
+                  {/* Item 1 */}
                   <Transition
                     show={tab === 2}
                     appear={true}
@@ -213,25 +234,26 @@ export default function Features() {
                     beforeEnter={() => heightFix()}
                     unmount={false}
                   >
-                    <div className="relative inline-flex flex-col">
-                      <Image
+                    <div className="relative inline-flex flex-col items-center">
+                      <p className="text-gray-600 text-center mt-4 p-4 bg-white bg-opacity-80 border border-gray-200 rounded shadow-lg">
+                        Throughout my career, I have developed a diverse skill
+                        set, mastering technologies such as Java Spring Boot,
+                        Python, JavaScript, React, Node.js, HTML5, CSS3, Docker,
+                        Jenkins, AWS, Git, GitHub, MySQL, PostgreSQL, MongoDB,
+                        and Redis. My expertise is in integrating these
+                        technologies to create robust, high-performing, and
+                        user-centric applications.
+                      </p>
+                      {/* <Image
                         className="md:max-w-none mx-auto rounded"
                         src={FeaturesBg}
                         width={500}
                         height="462"
                         alt="Features bg"
-                      />
-                      <Image
-                        className="md:max-w-none absolute w-full left-0 transform animate-float"
-                        src={FeaturesElement}
-                        width={500}
-                        height="44"
-                        alt="Element"
-                        style={{ top: "30%" }}
-                      />
+                      /> */}
                     </div>
                   </Transition>
-                  {/* Item 3 */}
+                  {/* Item 2 */}
                   <Transition
                     show={tab === 3}
                     appear={true}
@@ -246,21 +268,60 @@ export default function Features() {
                     unmount={false}
                   >
                     <div className="relative inline-flex flex-col">
-                      <Image
+                      {/* <Image
                         className="md:max-w-none mx-auto rounded"
                         src={FeaturesBg}
                         width={500}
                         height="462"
                         alt="Features bg"
-                      />
-                      <Image
-                        className="md:max-w-none absolute w-full left-0 transform animate-float"
-                        src={FeaturesElement}
+                      /> */}
+                      <p className="text-gray-600 text-center mt-4 p-4 bg-white bg-opacity-80 border border-gray-200 rounded shadow-lg">
+                        After completing my master's degree in Financial
+                        Economics at the University of Birmingham, I decided to
+                        further expand my expertise by pursuing a second
+                        master's in Computer Science at University College
+                        Dublin (UCD). This combination of financial and
+                        technical education has given me a unique perspective in
+                        my field, allowing me to blend economic understanding
+                        with technical skills in my software development
+                        projects.
+                      </p>
+                    </div>
+                  </Transition>
+                  {/* Item 3 */}
+                  <Transition
+                    show={tab === 4}
+                    appear={true}
+                    className="w-full"
+                    enter="transition ease-in-out duration-700 transform order-first"
+                    enterFrom="opacity-0 translate-y-16"
+                    enterTo="opacity-100 translate-y-0"
+                    leave="transition ease-in-out duration-300 transform absolute"
+                    leaveFrom="opacity-100 translate-y-0"
+                    leaveTo="opacity-0 -translate-y-16"
+                    beforeEnter={() => heightFix()}
+                    unmount={false}
+                  >
+                    <div className="relative inline-flex flex-col">
+                      {/* <Image
+                        className="md:max-w-none mx-auto rounded"
+                        src={FeaturesBg}
                         width={500}
-                        height="44"
-                        alt="Element"
-                        style={{ top: "30%" }}
-                      />
+                        height="462"
+                        alt="Features bg"
+                      /> */}
+                      <p className="text-gray-600 text-center mt-4 p-4 bg-white bg-opacity-80 border border-gray-200 rounded shadow-lg">
+                        As I continue to advance in my career, I am committed to
+                        utilizing my unique blend of skills in finance and
+                        technology to develop innovative solutions. My education
+                        has not only provided me with technical skills but also
+                        a broader understanding of how technology can be used to
+                        drive economic and social value. I am eager to explore
+                        new challenges where I can apply my comprehensive skill
+                        set to create applications that are not only
+                        technologically sophisticated but also economically and
+                        socially impactful.
+                      </p>
                     </div>
                   </Transition>
                 </div>
