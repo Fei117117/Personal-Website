@@ -52,19 +52,23 @@ export default function SkillsAndTechnologies() {
 
           {/* Icons grid */}
           <div
-            className="flex flex-wrap justify-center gap-4"
+            className="flex flex-col justify-center gap-4"
             data-aos="zoom-y-out"
           >
-            <img
-              src="https://skillicons.dev/icons?i=java,spring,python,django,flask,javascript,react,nodejs,html,css,docker,jenkins"
-              alt="Technology Icons Set 1"
-              className="max-w-full h-auto"
-            />
-            <img
-              src="https://skillicons.dev/icons?i=aws,git,github,mysql,postgresql,mongodb,redis,ruby,r,figma,postman,bootstrap"
-              alt="Technology Icons Set 2"
-              className="max-w-full h-auto"
-            />
+            <div className="flex justify-center gap-4">
+              <img
+                src="https://skillicons.dev/icons?i=java,spring,python,django,flask,javascript,react,nodejs,html,css,docker,jenkins"
+                alt="Technology Icons Set 1"
+                className="max-w-full h-auto"
+              />
+            </div>
+            <div className="flex justify-center gap-4">
+              <img
+                src="https://skillicons.dev/icons?i=aws,git,github,mysql,postgresql,mongodb,redis,ruby,r,figma,postman,bootstrap"
+                alt="Technology Icons Set 2"
+                className="max-w-full h-auto"
+              />
+            </div>
           </div>
 
           {/* Testimonials */}
@@ -103,7 +107,6 @@ export default function SkillsAndTechnologies() {
                 {/* Additional content goes here */}
               </div>
             </div>
-
             {/* <cite className="block font-bold text-lg not-italic mb-1">
                   Darya Finger
                 </cite>
