@@ -470,10 +470,12 @@ export default function NYSeeNow() {
         {/* Repeat the same structure for other sections... */}
 
         <div className="text-center mt-12">
-          <Link href="/projects" passHref>
-            <a className="text-blue-600 hover:underline text-lg">
-              ← Back to Projects
-            </a>
+          <Link
+            href="/projects"
+            passHref
+            className="text-blue-600 hover:underline text-lg"
+          >
+            ← Back to Projects
           </Link>
         </div>
       </div>

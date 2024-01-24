@@ -1,4 +1,4 @@
-// File: /Users/k/Desktop/Personal-Website-Dev/app/api/hello/route.ts
+// File: /Users/k/Desktop/Personal-Website/app/api/hello/route.ts
 import * as entry from '../../../../../app/api/hello/route.js'
 import type { NextRequest } from 'next/server.js'
 

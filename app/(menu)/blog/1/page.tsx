@@ -30,10 +30,12 @@ export default function Natour() {
         {/* Repeat the same structure for other sections... */}
 
         <div className="text-center mt-12">
-          <Link href="/projects" passHref>
-            <a className="text-blue-600 hover:underline text-lg">
-              ← Back to Blogs
-            </a>
+          <Link
+            href="/blog"
+            passHref
+            className="text-blue-600 hover:underline text-lg"
+          >
+            ← Back to Blogs
           </Link>
         </div>
       </div>
