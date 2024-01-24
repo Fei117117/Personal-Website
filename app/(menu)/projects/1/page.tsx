@@ -1,10 +1,9 @@
 import Link from "next/link";
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 export const metadata = {
   title: "Fei - NYSeeNow",
 };
-
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 export default function NYSeeNow() {
   return (
@@ -470,13 +469,12 @@ export default function NYSeeNow() {
         {/* Repeat the same structure for other sections... */}
 
         <div className="text-center mt-12">
-          <Link
-            href="/projects"
-            passHref
+          <a
+            href={`${basePath}/projects`}
             className="text-blue-600 hover:underline text-lg"
           >
             ← Back to Projects
-          </Link>
+          </a>
         </div>
       </div>
     </section>

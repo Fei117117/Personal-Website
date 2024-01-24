@@ -1,10 +1,11 @@
 import Link from "next/link";
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 export const metadata = {
   title: "Fei - Post1",
 };
 
-export default function Natour() {
+export default function blog1() {
   return (
     <section className="bg-white py-12">
       <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -30,13 +31,12 @@ export default function Natour() {
         {/* Repeat the same structure for other sections... */}
 
         <div className="text-center mt-12">
-          <Link
-            href="/blog"
-            passHref
+          <a
+            href={`${basePath}/blog`}
             className="text-blue-600 hover:underline text-lg"
           >
             ← Back to Blogs
-          </Link>
+          </a>
         </div>
       </div>
     </section>

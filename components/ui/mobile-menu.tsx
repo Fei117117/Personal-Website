@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect } from "react";
 import { Transition } from "@headlessui/react";
 import Link from "next/link";
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 export default function MobileMenu() {
   const [mobileNavOpen, setMobileNavOpen] = useState<boolean>(false);
@@ -74,31 +75,31 @@ export default function MobileMenu() {
         >
           <ul className="px-5 py-2">
             <li>
-              <Link
-                href="/projects"
+              <a
+                href={`${basePath}/projects`}
                 className="flex font-medium w-full text-gray-600 hover:text-gray-900 py-2 justify-center"
                 onClick={() => setMobileNavOpen(false)}
               >
                 Projects
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
-                href="/blog"
+              <a
+                href={`${basePath}/blog`}
                 className="flex font-medium w-full text-gray-600 hover:text-gray-900 py-2 justify-center"
                 onClick={() => setMobileNavOpen(false)}
               >
                 Blog
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
-                href="/contact"
+              <a
+                href={`${basePath}/contact`}
                 className="flex font-medium w-full text-gray-600 hover:text-gray-900 py-2 justify-center"
                 onClick={() => setMobileNavOpen(false)}
               >
                 Contact
-              </Link>
+              </a>
             </li>
           </ul>
         </Transition>
