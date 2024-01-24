@@ -2,8 +2,7 @@ import Link from "next/link";
 import React from "react";
 
 export const metadata = {
-  title: "My Blog - Web Developer",
-  description: "Insights and articles on web development",
+  title: "Fei - My Blog",
 };
 
 export default function Blog() {

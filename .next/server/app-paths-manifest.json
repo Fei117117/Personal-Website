@@ -1,4 +1,9 @@
 {
+  "/(menu)/projects/3/page": "app/(menu)/projects/3/page.js",
+  "/(menu)/projects/page": "app/(menu)/projects/page.js",
+  "/(menu)/blog/1/page": "app/(menu)/blog/1/page.js",
+  "/(menu)/projects/1/page": "app/(menu)/projects/1/page.js",
+  "/(menu)/blog/page": "app/(menu)/blog/page.js",
   "/(home)/page": "app/(home)/page.js",
-  "/(menu)/projects/page": "app/(menu)/projects/page.js"
+  "/(menu)/contact/page": "app/(menu)/contact/page.js"
 }

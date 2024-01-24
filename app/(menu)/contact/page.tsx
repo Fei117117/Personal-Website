@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Contact Me - Web Developer",
+  title: "Fei - Contact Me",
   description:
     "Find my contact information for collaborations, projects, or inquiries",
 };

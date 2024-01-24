@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 
 export const metadata = {
-  title: "My Projects - Web Developer",
+  title: "Fei - My Projects",
   description: "Showcasing my latest web development projects",
 };
 
