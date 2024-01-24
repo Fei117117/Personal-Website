@@ -1,3 +1,5 @@
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 export default function FeaturesBlocks() {
   return (
     <section className="relative">
@@ -26,7 +28,7 @@ export default function FeaturesBlocks() {
             {/* 1st item */}
             <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-lg transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-2xl">
               <img
-                src="/images/NYSEENOW.png"
+                src={`${basePath}/images/NYSEENOW.png`}
                 alt="Icon for NYSeeNow"
                 className="w-16 h-16 p-1 -mt-1 mb-2"
               />
@@ -42,7 +44,7 @@ export default function FeaturesBlocks() {
             {/* 2nd item */}
             <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-lg transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-2xl">
               <img
-                src="/images/RIDEMATE.png"
+                src={`${basePath}/images/RIDEMATE.png`}
                 alt="Icon for RideMate"
                 className="w-16 h-16 p-1 -mt-1 mb-2"
               />
@@ -59,7 +61,7 @@ export default function FeaturesBlocks() {
             {/* 3rd item */}
             <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-lg transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-2xl">
               <img
-                src="/images/NATOUR.png"
+                src={`${basePath}/images/NATOUR.png`}
                 alt="Icon for Natour"
                 className="w-16 h-16 p-1 -mt-1 mb-2"
               />

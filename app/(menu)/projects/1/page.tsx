@@ -4,6 +4,8 @@ export const metadata = {
   title: "Fei - NYSeeNow",
 };
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 export default function NYSeeNow() {
   return (
     <section className="bg-white py-12">
@@ -62,7 +64,7 @@ export default function NYSeeNow() {
               Learning) Micro-service, and DevOps.
             </p>
             <img
-              src={"/images/NYSEENOW1.png"}
+              src={`${basePath}/images/NYSEENOW1.png`}
               alt={"NYSeeNow_Architecture"}
               className="w-fulL"
             />

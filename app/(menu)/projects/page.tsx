@@ -1,6 +1,8 @@
 import Link from "next/link";
 import React from "react";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 export const metadata = {
   title: "Fei - My Projects",
   description: "Showcasing my latest web development projects",
@@ -13,7 +15,7 @@ export default function Projects() {
       title: "NYSeeNow",
       description:
         "An innovative web and mobile application designed to transform the tourist experience in Manhattan, New York.",
-      imageUrl: "/images/NYSEENOW.png",
+      imageUrl: `${basePath}/images/NYSEENOW.png`,
       pagePath: "/projects/1/page",
     },
     {
@@ -21,7 +23,7 @@ export default function Projects() {
       title: "RideMate",
       description:
         "A web application designed to enhance the experience of using Dublin Bikes. It provides real-time and predictive information on bike availability and weather conditions.",
-      imageUrl: "/images/RIDEMATE.png",
+      imageUrl: `${basePath}/images/RIDEMATE.png`,
       pagePath: "/projects/2/page",
     },
     {
@@ -29,7 +31,7 @@ export default function Projects() {
       title: "Natour",
       description:
         "Natours is a visually engaging, interactive website designed for a fictional outdoor tour company.",
-      imageUrl: "/images/NATOUR.png",
+      imageUrl: `${basePath}/images/NATOUR.png`,
       pagePath: "/projects/3/page",
     },
   ];

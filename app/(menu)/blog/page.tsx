@@ -1,3 +1,5 @@
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 import Link from "next/link";
 import React from "react";
 
@@ -12,7 +14,7 @@ export default function Blog() {
       id: 1,
       title: "Blog Post One",
       description: "Brief description of Blog Post One...",
-      imageUrl: "/images/BLOG1.webp", // Replace with your image path
+      imageUrl: `${basePath}/images/BLOG1.webp`,
       blogUrl: "/blog/1/page", // Replace with your blog post link
     },
     // ... other blog posts
