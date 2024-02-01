@@ -36,7 +36,7 @@ export default function ContactMe() {
               </h3>
               <p className="text-gray-600">
                 <a
-                  href="https://www.linkedin.com/in/yourprofile"
+                  href="https://www.linkedin.com/in/fei-gao-869335120/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
