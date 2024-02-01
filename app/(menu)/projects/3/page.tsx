@@ -18,14 +18,16 @@ export default function Natour() {
         </div>
 
         <div id="introduction" className="mb-12">
-          <h2 className="text-3xl font-semibold text-gray-800">INTRODUCTION</h2>
+          <h2 className="text-3xl font-semibold text-gray-800">
+            Project Overview
+          </h2>
           <div className="mt-4">
             <p className="mt-2 text-gray-600 text-lg">Placeholder</p>
           </div>
         </div>
 
         <div id="features" className="mb-12">
-          <h2 className="text-3xl font-semibold text-gray-800">FEATURES</h2>
+          <h2 className="text-3xl font-semibold text-gray-800">Features</h2>
           <div className="mt-4">
             <h3 className="text-2xl text-gray-700 font-medium">Placeholder</h3>
             <p className="mt-2 text-gray-600 text-lg">Placeholder</p>

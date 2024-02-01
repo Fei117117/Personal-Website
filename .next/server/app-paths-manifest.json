@@ -2,11 +2,11 @@
   "/_not-found": "app/_not-found.js",
   "/api/hello/route": "app/api/hello/route.js",
   "/(home)/page": "app/(home)/page.js",
-  "/(menu)/blog/1/page": "app/(menu)/blog/1/page.js",
   "/(menu)/contact/page": "app/(menu)/contact/page.js",
+  "/(menu)/blog/1/page": "app/(menu)/blog/1/page.js",
   "/(menu)/blog/page": "app/(menu)/blog/page.js",
   "/(menu)/projects/3/page": "app/(menu)/projects/3/page.js",
-  "/(menu)/projects/2/page": "app/(menu)/projects/2/page.js",
   "/(menu)/projects/page": "app/(menu)/projects/page.js",
-  "/(menu)/projects/1/page": "app/(menu)/projects/1/page.js"
+  "/(menu)/projects/1/page": "app/(menu)/projects/1/page.js",
+  "/(menu)/projects/2/page": "app/(menu)/projects/2/page.js"
 }
